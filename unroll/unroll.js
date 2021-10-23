@@ -9,10 +9,4 @@ function unroll(squareArray, newArray = []) {
     return newArray;
 }
 
-const smallerSquare = [
-    ["a", "b", "c"],
-    ["d", "e", "f"],
-    ["g", "h", "i"]
-  ];
-console.log(unroll(smallerSquare));
 module.exports = unroll;
