@@ -10,13 +10,18 @@ import {
   ListGroupItem
 } from "reactstrap";
 
-function FoodMenu({ snacks }) {
+
+/** Changes made to this component
+ *    1). Added a "resource" prop determine whether to call the "snack" or "drink" endpoint
+ *    2). Added a title prop to give the menu the appropriate title
+ */
+function FoodMenu({ snacks, title, resource }) {
   return (
     <section className="col-md-4">
       <Card>
         <CardBody>
           <CardTitle className="font-weight-bold text-center">
-            Food Menu
+            {title}
           </CardTitle>
           <CardText>
             Some quick example text to build on the card title and make up the
@@ -24,7 +29,7 @@ function FoodMenu({ snacks }) {
           </CardText>
           <ListGroup>
             {snacks.map(snack => (
-              <Link to={`/snacks/${snack.id}`} key={snack.id}>
+              <Link to={`/${resource}/${snack.id}`} key={snack.id}>
                 <ListGroupItem>{snack.name}</ListGroupItem>
               </Link>
             ))}

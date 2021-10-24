@@ -27,6 +27,20 @@
       "description": "Crisp!",
       "recipe": "Open can.",
       "serve": "Immediately."
+    },
+    {
+      "id": "milk",
+      "name": "Milk",
+      "description": "a cold beverage with vitamins and minerals",
+      "recipe": "Pour from the jug",
+      "serve": "cold, no ice"
+    },
+    {
+      "id": "water",
+      "name": "Water",
+      "description": "a thirst quencher",
+      "recipe": "straight from the faucet",
+      "serve": "Cold, with ice!"
     }
   ],
   "snacks": [
@@ -50,6 +64,20 @@
       "description": "Tart and delicious.",
       "recipe": "Mix arugula, toasted walnuts, and thinly-sliced Parmesan cheese. Dress with lemon and olive oil.",
       "serve": "Place on tiny, precious little plates."
+    },
+    {
+      "id": "hot dog",
+      "name": "Hot Dog",
+      "description": "a link of meat",
+      "recipe": "Fire up the grill!",
+      "serve": "on a bun"
+    },
+    {
+      "id": "cookies",
+      "name": "Cookies",
+      "description": "a delicious treat",
+      "recipe": "bake in the oven",
+      "serve": "hot"
     }
   ]
 }

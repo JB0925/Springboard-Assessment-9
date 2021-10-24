@@ -3,6 +3,9 @@ import "./NavBar.css";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, NavItem } from "reactstrap";
 
+/** Changes made to this component:
+ *    1). Added links to the drinks and add endpoints
+ */
 function NavBar() {
   return (
     <div>
@@ -14,6 +17,18 @@ function NavBar() {
         <Nav className="ml-auto" navbar>
           <NavItem>
             <NavLink to="/snacks">Snacks</NavLink>
+          </NavItem>
+        </Nav>
+
+        <Nav className="ml-auto" navbar>
+          <NavItem>
+            <NavLink to="/drinks">Drinks</NavLink>
+          </NavItem>
+        </Nav>
+
+        <Nav className="ml-auto" navbar>
+          <NavItem>
+            <NavLink to="/add">Add Item</NavLink>
           </NavItem>
         </Nav>
       </Navbar>
